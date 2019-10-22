@@ -35,3 +35,19 @@ public class squareRoot {
         System.out.printf("%.2f", x2);
     }
 }
+
+EXERCISE 3:
+
+public class exponent {
+
+	public static void main(String[] args) {
+		gauss(5.0,5.0);
+		System.out.println(gauss);
+		
+	}
+
+	public static void gauss(double x, double n) {
+	
+		
+	}
+}
