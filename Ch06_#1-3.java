@@ -38,16 +38,30 @@ public class squareRoot {
 
 EXERCISE 3:
 
-public class exponent {
+public class Gauss {
 
 	public static void main(String[] args) {
-		gauss(5.0,5.0);
-		System.out.println(gauss);
-		
+		System.out.println(gauss (2.0, 5));
 	}
-
-	public static void gauss(double x, double n) {
-	
+	public static double gauss (double x, int n) {
+		int fact =1;
+		int sign = 1;
+		double exp = 1.0;
+		double term=0;
+		double sum = 1.0;
+		
+		for (int i=1; i<n; i++) {
+			fact = i * fact;
+			sign = sign *-1;
+			exp = exp * x * x;
+			
+			term=(sign*exp/fact);
+			
+			//System.out.println(term);
+			
+			sum+= term;
+		}
+		return sum;
 		
 	}
 }
