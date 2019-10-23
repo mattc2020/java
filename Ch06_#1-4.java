@@ -65,3 +65,23 @@ public class Gauss {
 		
 	}
 }
+
+EXERCISE 4:
+
+public class abecedarian {
+
+	public static void main(String[] args) {
+		System.out.println(isAbecedarian("abc"));
+	}
+	public static boolean isAbecedarian(String str) {
+		
+		
+		for (int i=0; i < str.length()-1; i++) {
+			if (str.charAt(i) > str.charAt(i+1) ) {
+				return false;
+			} 
+			//System.out.println( str.charAt(i) +" "+ str.charAt(i+1) );	
+		}
+		return true;
+	}
+}
