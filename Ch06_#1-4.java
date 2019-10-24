@@ -84,3 +84,38 @@ public class abecedarian {
 		return true;
 	}
 }
+
+EXERCISE 5:
+
+public class isDoubloon {
+
+	public static void main(String[] args) {
+		System.out.println(doubloon("appall"));
+	}
+	
+	
+	public static boolean doubloon (String str) {
+		str=str.toLowerCase();
+		int count = 0;
+		int total = 0;
+		for (int q=0; q < str.length(); q++) {
+			
+			for (int i=0; i < str.length()+1; i++) {
+				if (str.charAt(i) == str.charAt(q) ) {
+					count = count + 1;
+					//System.out.println(count);	
+				} 
+				if (count == 2) {
+					total++;
+					System.out.println(total);
+					}else 
+					count = 0;
+			}
+		}
+		if (total==str.length()/2) {
+			return true;
+		}
+		return false;
+
+}
+}
