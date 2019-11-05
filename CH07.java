@@ -26,3 +26,34 @@ public class indexOfMax {
 	 }
 	
 }
+
+EXCERCISE 5:
+
+public class areFactors {
+
+	public static void main(String[] args) {
+		int[] a = {4,6,8,10};
+		int n = 2;
+		System.out.println(areFactors (a,n));
+	}
+	
+
+
+
+	public static boolean areFactors (int a[], int n) {
+		boolean isTrue = true;
+		
+		for (int i = 0 ; i<a.length; i++) {
+		   double number = (double)a[i]/n;
+			if((number == (int)number)) {
+		    isTrue = true;
+		    }
+		    else{
+		      isTrue = false;
+		  	  return isTrue;
+		    }
+			
+		}
+	return isTrue;
+	}
+}
